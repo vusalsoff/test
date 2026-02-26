@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="az">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Psixoloji Testlər — 1 düymə ilə Hesabla</title>
+
+ 
+</head>
+
+<body>
+<header>
+  <h1>Psixoloji Testlər — 1 düymə ilə Hesabla</h1>
+  <div class="sub">
+    Solda <b>Temperament Testi (57 sual)</b>, sağda <b>Psixoloji Portret (30 sual)</b>.
+    Yuxarıdakı <b>Hesabla (hamısı)</b> düyməsi hər ikisini hesablayır və sonda “Yekun mətni” verir.
+  </div>
+
+  <div class="topbar">
+    <div style="display:flex; gap:10px; flex-wrap:wrap;">
+      <button class="btn primary" id="calcAll">Hesabla (hamısı)</button>
+      <button class="btn" id="demoAll">Demo doldur</button>
+      <button class="btn danger" id="resetAll">Hamısını sıfırla</button>
+    </div>
+    <div style="display:flex; gap:8px; flex-wrap:wrap;">
+      <span class="chip" id="chipT">Temperament: 0/57</span>
+      <span class="chip" id="chipP">Portret: 0/30</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="grid">
+
+    <!-- ================= TEMPERAMENT LEFT ================= -->
+    <section class="card">
+      <h2 style="margin:0 0 6px; font-size:18px;">Temperament Testi (57 sual)</h2>
+      <div class="controls">
+        <div class="search">
+          <input id="searchT" type="search" placeholder="Axtar: məsələn 17, 41, 56..." />
+          <button class="btn small" id="clearSearchT">Təmizlə</button>
+        </div>
+      </div>
+      <div class="hint">Hər sual üçün <b>Bəli</b>, <b>Xeyr</b və ya <b>Boş</b>.</div>
+      <div class="meta" id="metaT"></div>
+      <div class="divider"></div>
+      <div class="qgrid" id="qgridT"></div>
+
+      <div class="divider"></div>
+
+      
+    </section>
+
+    <!-- ================= PORTRAIT RIGHT ================= -->
+    <section class="card">
+      <h2 style="margin:0 0 6px; font-size:18px;">Psixoloji Portret (30 sual)</h2>
+
+      <div class="controls">
+        <div class="search">
+          <input id="searchP" type="search" placeholder="Axtar: məsələn 7, 14, 30..." />
+          <button class="btn small" id="clearSearchP">Təmizlə</button>
+        </div>
+      </div>
+      <div class="hint">Hər sual üçün <b>Bəli</b>, <b>Xeyr</b və ya <b>Boş</b>.</div>
+      <div class="meta" id="metaP"></div>
+      <div class="divider"></div>
+      <div class="qgrid" id="qgridP"></div>
+
+      <div class="divider"></div>
+
+      <div class="scoreBox">
+        <div class="row">
+          <div><div class="label">1) İctimai qaydaları pozmağa meylilik</div><div class="small">Bal: 0–5</div></div>
+          <div class="value" id="b1P">0</div>
+        </div>
+        <div class="row">
+          <div><div class="label">2) Liderlik keyfiyyətləri</div><div class="small">Bal: 0–8</div></div>
+          <div class="value" id="b2P">0</div>
+        </div>
+        <div class="row">
+          <div><div class="label">3) Özünə nəzarət qabiliyyəti</div><div class="small">Bal: 0–6</div></div>
+          <div class="value" id="b3P">0</div>
+        </div>
+        <div class="row">
+          <div><div class="label">4) Özünə zərər yetirmə ehtimalı</div><div class="small">Bal: 0–4</div></div>
+          <div class="value" id="b4P">0</div>
+        </div>
+        <div class="row">
+          <div><div class="label">5) Addiktiv davranışa meyllik</div><div class="small">Bal: 0–7</div></div>
+          <div class="value" id="b5P">0</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="result"><h3>1) Nəticə</h3><p id="r1P" class="small">—</p></div>
+        <div class="result"><h3>2) Nəticə</h3><p id="r2P" class="small">—</p></div>
+        <div class="result"><h3>3) Nəticə</h3><p id="r3P" class="small">—</p></div>
+        <div class="result"><h3>4) Nəticə</h3><p id="r4P" class="small">—</p></div>
+        <div class="result"><h3>5) Nəticə</h3><p id="r5P" class="small">—</p></div>
+
+        <div class="divider"></div>
+<div class="scoreBox">
+        <div class="row">
+          <div><div class="label">Ekstraversiya</div><div class="small">0–24</div></div>
+          <div class="value" id="j1T">0</div>
+        </div>
+        <div class="row">
+          <div><div class="label">Əsəbilik</div><div class="small">0–24</div></div>
+          <div class="value" id="l1T">0</div>
+        </div>
+        <div class="row">
+          <div><div class="label">Səmimilik</div><div class="small">0–9</div></div>
+          <div class="value" id="n1T">0</div>
+        </div>
+
+        <div class="result">
+          <h3>Ekstraversiya nəticəsi</h3>
+          <p id="j11T" class="small">—</p>
+        </div>
+        <div class="result">
+          <h3>Əsəbilik nəticəsi</h3>
+          <p id="j14T" class="small">—</p>
+        </div>
+        <div class="result">
+          <h3>Səmimilik nəticəsi</h3>
+          <p id="j17T" class="small">—</p>
+        </div>
+        <div class="result">
+          <h3>Temperament</h3>
+          <p id="k4T" style="font-size:18px;font-weight:800;margin-bottom:6px;">—</p>
+          <p id="k4noteT" class="small">—</p>
+        </div>
+        <div class="result">
+          <h3>Temperament izahı</h3>
+          <p id="i21T" class="small">—</p>
+        </div>
+      </div>
+      
+       <div class="result final-box">
+  <h3>Psixoloji Portret (yekun mətn)</h3>
+
+  <button class="btn small full" id="copyFinal">
+    Yekun mətni kopyala
+  </button>
+  <button class="btn small full" id="sendWA">
+  WhatsApp ilə göndər
+</button>
+
+  <label for="finalText" class="visually-hidden">
+    Yekun psixoloji portret mətni
+  </label>
+
+  <textarea id="finalText" class="final-text" readonly>—</textarea>
+
+  <div class="small copy-hint" id="copyHint">—</div>
+</div>
+
+      </div>
+    </section>
+
+  </div>
+</div>
+<script src="./src/js/index.js"></script>
+</body>
+</html>
