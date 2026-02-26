@@ -12,14 +12,16 @@ const N_NO = new Set([12, 18, 30, 42, 48, 54]);
 
 const TEMPERAMENT_TEXT = {
   Melanxolik:
-    " Melanxolikdir (bu temperament tipinə mənsub hərbi qulluqçular hər hansı yeni şəraitə pis uyğunlaşır, yeni qaydaları könülsüz, sanki özlərin daxili təzyiqi altında qəbul edirlər. Belə hərbiçilər ünsiyyətə girməkdən çəkinir, insanlarla ünsiyyətdə olarkən sıxılır, utancaqlığı ilə seçilir, heç vaxt söhbətə birinci başlamır, tənhalığa daha üstünlük verir, özünəqapanan, tez inciyən və küsəyən olurlar).",
+    "Melanxolikdir bu temperament tipinə mənsub hərbçilər isə hər han¬sı yeni şəraitə pis uyğunlaşır, yeni qaydaları könülsüz, sanki öz¬lə¬ri¬¬nin daxili təzyiqi altında qəbul edirlər. Belə hərbçilər ünsiyyətə gir¬¬məkdən çəkinir, insanlarla ünsiyyətdə olarkən sıxılır, utan¬caq¬lı¬ğı ilə seçilir, heç vaxt söhbətə birinci başlamır, tənhalığa daha çox üs¬tünlük verir, özünəqapanan, tez inciyən və küsəyən olurlar. Bu tem¬¬perament tipini digərlərindən fərqləndirən xüsusiy¬yətlər yük¬sək sensitivlik (digər bütün temperament tiplərində sensitivlik zəif¬dir), aşağı reaktivlik və qeyri-fəallıq (bu cəhət də ancaq melanxo¬lik¬¬lərə aiddir), ətalətlilik, yüksək emosional oya¬nıq¬lıq, depressiv sə¬ciy¬yəli emosiyalar, ağır templi reaksiya¬lar¬dır. Adə¬tən, ən çox dep¬¬ressiyaya düşən, eyforiyanın nə olduğunu çox nadir hallarda bi¬¬lən, həmişə hər hansı cəhəti ilə başqalarından pis oldu¬ğunu fi¬kir¬¬ləşən, dünyaya gələn gündən bədbəxt doğulduğuna özünü inan¬¬dıran insanlar melanxolik temperament tipinə aid edilirlər. Am¬¬ma bir cəhəti də qeyd etmək vacibdir ki, melanxolik tipli in¬san¬lar¬da məsuliyyət, cavabdehlik hissi daha yüksək olur. Bu tem¬pe¬ra¬ment tipinə malik hərbçilər onlara verilən tapşırıqları kö¬nülsüz və inamsız qəbul etsələr də, son nəticədə tapşırığı daha ba-ca¬rıq¬la yerinə yetirirlər.",
   Fleqmatik:
-    " Fleqmatikdir (bu temperament tipinə mənsub hərbi qulluqçularda emosional tarazlığın yüksək olması, əsəbilik dərəcəsinin aşağı, konkordantlığın yuxarı olması, onlarda ekstravertliyin deyil, özünəqapanmanın üstünlük təşkil etməsi bu tip insanların daha təmkinli tip kimi tanınmasına gətirib çıxarır. Onlar adətən çox soyuqqanlı, adamayovuşmaz olur, başqa adamlara maraq göstərmir, əksinə dərindən özünü təhlilə meyilli olur, tələsik, “isti başla” qərarlar qəbul etmirlər. Zəif sensetivlik, qeyri-reaktivlik, yüksək fəallıq, introverlik, zəif emosional oyanıqlıq, ağırtempli cavab reaksiyaları kimi xüsusiyyətlər fleqmatik temperament tipli insanları xarakterizə  edən cəhətlərə aiddir).",
+    " Fleqmatikdir bu temperament tipinə mənsub hərbçilərdə emosional ta¬raz¬lığın yüksək olması, əsəbilik dərəcəsinin aşağı, kon¬kor¬dant¬lı¬ğın yuxarı olması, onlarda ekstravertliyin deyil, özünəqapanmanın üs¬tünlük təşkil etməsi bu tip insanların daha təmkinli tip kimi ta¬nın¬masına gətirib çıxarır. Onlar, adətən, çox soyuqqanlı, ada¬ma¬yo¬vuşmaz olur, başqa adamlara maraq göstərmir, əksinə, də¬rindən özünütəhlilə meyilli olur, tələsik, “isti başla” qərarlar qə¬bul et¬mirlər. Zəif sensitivlik, qeyri-reaktivlik, yüksək fəallıq, rigidlik, in¬tro¬vertlik, zəif emosional oyanıqlıq, ağır templi cavab reaksiyaları kimi xüsusiyyətlər fleqmatik temperament tipli insanları xarak¬te¬ri¬zə edən cəhətlərə aiddir.",
   Sanqvinik:
-    " Sanqvinikdir (bu temperament tipinə mənsub hərbi qulluqçuların psixikası daha yüksək oyanıqlıdır, belə adamlar hərbi qulluğa daha tez adaptasiya olunur, hər hansı hərbi şəraitə daha tez uyğunlaşa bilirlər. Onlar tez ünsiyyətə girir, istənilən şəraitdə və istənilən kollektivdə özlərinə həmfikir tapa bilirlər. Liderlik xüsusiyyətləri, hər hansı qrupda qeyri-rəsmi lider (qrup və ya hərbi kollektivin hərbi  bölmənin rəsmi lideri həmin bölmənin bilavasitə komandiridir) ola bilmək ehtimalları yüksəkdir).",
+    " Sanqvinikdir bu temperament tipinə mənsub hərbçilərin psixikası da¬¬ha yüksək oyanıqlıdır, belə adamlar hərbi qulluğa daha tez adap¬¬tasiya olunur, hər hansı hərbi şəraitə daha tez uyğunlaşa bi¬lir¬¬lər. Onlar tez ünsiyyətə girir, istənilən şəraitdə və istənilən kol¬lek¬tivdə özlərinə həmsöhbət, həmfikir tapa bilirlər. Liderlik xüsu¬siy¬yətləri, qabiliyyətləri, hər hansı qrupda qeyri-rəsmi lider (qrup və ya hərbi kollektivin, hərbi bölmənin rəsmi lideri həmin bölmənin bi¬l¬avasitə komandiridir) ola bilmək ehtimalları yüksəkdir. Bu tip adam¬lar heç vaxt ruhdan düşmürlər, küsəyən olmurlar, məğlubiy¬yət¬lə¬rini tez unudur, öz uğursuzluqları ilə tez barışa bilirlər. Zəif sen¬sitivlik (resseptorlarda oyanma prosesinə səbəb olan xarici və ya daxili təsirlərin, yəni stimulların təsirinə həssaslıq), yüksək reak¬¬tivlik və yüksək fəallıq, plastiklik, müvazinətlilik, ekstravertlik (ha¬¬mı ilə hər bir şeyi bölüşmək istəyi), ani oyanıqlıq, tempi sürətli olan reaksiyalar, konkordantlıq (əhlikef, laqeyd, heç nəyi ürəyinə sal¬mayan), əsəb sisteminin möhkəmliyi sanqvinik temperament ti¬pi¬nə xas xüsusiyyətlərdir. Sanqviniklər yüksək səviyyədə ün¬siy¬yət¬cil olmaları, ürəyiaçıqlığı, başqa adamlara yüksək maraq gös¬tər¬mələri müqabilində özünütəhlilə dərindən meyilli deyillər, mə¬suliyyət hissinin kifayət qədər olmaması ilə fərqlənirlər.",
   Xolerik:
-    " Xolerikdir (temperament tipinə mənsub hərbçilər digərlərinə nisbətən ən höcət ,ən dalaşqan tip sayılırlar. Çünki həmin temperament tipinə mənsub hərbçilərdə emosional dəyişkənliyin, əsəbilik dərəcəsinin yüksək səviyyədə olması, və ekstravertliyin üstünlük təşkil etməsi , hər şeyi həmin andaca üzə vurmaq istəyi, çətin kompromisə girməkləri, həmişə özlərini haqlı hesab etməkləri bu tipli hərbçilərin şəxsi heyət arasında dalaşqan tip kimi tanınmasına gətirib çıxardır).",
+    " Xolerikdir bu temperament tipinə mənsub hərbçilər digərlərinə nis¬bə¬tən ən höcət, ən dalaşqan tip sayılırlar. Çünki həmin tem¬pera¬ment tipinə mənsub hərbçilərdə emosional dəyişkənliyin, emo¬sio¬nal dayanıqsızlığın, müvazinətsizliyin, əsəbilik dərəcəsinin yüksək sə-viyyədə olması və melanxolik temperament tipində olduğunun ək¬sinə olaraq özünəqapanma göstəricisinin aşağı olması, daha doğ¬rusu, ekstravertliyin üstünlük təşkil etməsi, hər şeyi həmin an¬da¬ca üzə vurmaq istəyi, digərləri ilə çox çətin razılaşmaq, çətin kom¬promisə girmək, həmişə özlərini haqlı hesab etmək kimi xü¬su¬siyyətləri, başqa sözlə, “qırmızısifətlilikləri”, bu tip hərbçilərin şəx¬si heyət arasında dalaşqan tip kimi tanınmasına gətirib çı¬xar¬dır. Zəif sensitivlik, yüksək reaktivlik və reaktivliyi üstün olan yük¬sək fəallıq, ekstravertlik, yüksək emosional oyanıqlıq, tempi sü¬rət¬li reaksiyalar xolerik temperamentli insanlara xasdır.",
 };
+
+
 
 // ===================== PORTRAIT KEY =====================
 const KEY_P = {
@@ -32,32 +34,32 @@ const KEY_P = {
 
 // ===================== INTERPRETATIONS (Portrait) =====================
 function interp1P(s) {
-  if (s <= 2) return "ictimai qaydaları pozmağa meyilliliyi aşağıdır.";
-  if (s <= 4) return "ictimai qaydaları pozmağa meyilliliyi var.";
-  return "ictimai qaydaları pozmağa meyilliliyi yüksəkdir.";
+  if (s <= 2) return "İctimai qaydaları pozmağa meyillİ deyil.";
+  if (s <= 4) return "İctimai qaydaları pozmağa meyillidir.";
+  return "İctimai qaydaları pozmağa meylliliyi yüksəkdir daim ciddi nəzarət tələb edir.";
 }
 function interp2P(s) {
-  if (s <= 3) return "özünə nəzarət etmək qabiliyyəti zəifdir.";
-  if (s <= 5) return "özünə nəzarət etmək qabiliyyəti normaldır.";
-  if (s === 6) return "özünə nəzarət etmək qabiliyyəti yüksəkdir.";
-  return "özünə nəzarət etmək qabiliyyəti (diapazondan kənar).";
+  if (s <= 3) return "Özünə nəzarət etmək qabiliyyəti zəifdir.";
+  if (s <= 5) return "Özünə nəzarət edə bilir, münaqişələrin yaranma ehtimalından yayınmağı bacarır.";
+  if (s === 6) return "Özünə nəzarət etmək qabiliyyəti yüksəkdir, münaqişələrin yaranma ehtimalından yayınmağı bacarır.";
+  return "Özünə nəzarət etmək qabiliyyəti (diapazondan kənar).";
 }
 function interp3P(s) {
   if (s <= 3) return "liderlik keyfiyyətləri zəif inkişaf edib.";
-  if (s <= 5) return "liderlik keyfiyyətləri mövcuddur.";
+  if (s <= 6) return "liderlik keyfiyyətlərinə malikdir.";
   return "liderlik keyfiyyətləri güclü inkişaf edib.";
 }
 function interp4P(s) {
-  if (s <= 2) return "özünə zərər yetirmə ehtimali aşağıdır.";
-  if (s === 3) return "özünə zərər yetirmə ehtimali var.";
-  if (s >= 4) return "özünə zərər yetirmə ehtimali yüksəkdir.";
-  return "özünə zərər yetirmə ehtimali (diapazondan kənar).";
+  if (s <= 2) return "Özünə zərər yetirmə ehtimali aşağıdır.";
+  if (s === 3) return "Özünə zərər yetirmə ehtimalı var, bu səbəbdəndə xidmət etdiyi bölmənin aidiyyəti üzrə komandir və rəis heyəti tərəfindən nəzarətdə saxlanılması məsləhətdir.";
+  if (s >= 4) return "Özünə zərər yetirmə ehtimalı yüksəkdir, bu səbəbdəndə xidmət etdiyi bölmənin aidiyyəti üzrə komandir və rəis heyəti tərəfindən ciddi nəzarətdə saxlanılması, onunla fərdi söhbətlərin aparılması zərurət olarsa dərindən öyrənilməsi üçün ixtisaslı həkim (psixoloq, nevroloq, psixiatr) müayinəsinə göndərilməsi məsləhətdir";
+  return "Özünə zərər yetirmə ehtimali (diapazondan kənar).";
 }
 function interp5P(s) {
   if (s <= 3)
-    return "addiktiv davranışları (spirtli içkilərə, psixotrop maddələrə münasibəti) sağlamdır.";
-  if (s <= 5) return "addiktiv davranışa meyllidir.";
-  if (s <= 7) return "addiktiv davranışa meylliliyi yüksəkdir.";
+    return "Addiktiv davranışları (spirtli içkilərə, psixotrop maddələrə münasibəti) sağlamdır.";
+  if (s <= 5) return "Addiktiv davranışlara (spirtli içkilərə, psixotrop maddələrə münasibəti)  meyllidir, təsir altına düşmək ehtimalı yüksəkdir. Qeyri-sağlam əhatədə, ümumi axına düşərək, qurşanma təhlükəsi mövcuddur. Kimlərlə yoldaşlıq və dostluq etmə səbəblərinin araşdırılması məqsədə uyğundur.";
+  if (s <= 7) return "Addiktiv davranışlara (spirtli içkilərə, psixotrop maddələrə münasibəti)  meylliliyi yüksəkdir, Qeyri-sağlam əhatədə, ümumi axına düşərək, qurşanma təhlükəsi mövcuddur. Kimlərlə yoldaşlıq və dostluq etmə səbəblərinin araşdırılması məqsədə uyğundur.";
   return "addiktiv davranış (diapazondan kənar).";
 }
 
